@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Silkscreen', monospace;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  html,
+  body,
+  #root {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: var(--font-sans);
+    background-color: #0e131f;
+    color: #f8f5ec;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+.font-pixel {
+  font-family: var(--font-display);
+}
+
+.font-mono-num {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+.pixelated {
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+/* Crisp pixel-RPG wooden/stone panel borders */
+.rpg-panel {
+  background: linear-gradient(180deg, #2d2638 0%, #1d1826 100%);
+  border: 2px solid #594a6e;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 245, 220, 0.14),
+    inset 0 -2px 0 rgba(0, 0, 0, 0.45),
+    0 6px 18px rgba(0, 0, 0, 0.55);
+}
+
+.rpg-panel-warm {
+  background: linear-gradient(180deg, #3c2a21 0%, #261914 100%);
+  border: 2px solid #7c5840;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 226, 175, 0.18),
+    inset 0 -2px 0 rgba(0, 0, 0, 0.5),
+    0 6px 18px rgba(0, 0, 0, 0.55);
+}
+
+.rpg-slot {
+  background: linear-gradient(180deg, #312c3c 0%, #221e2b 100%);
+  border: 2px solid #5e5473;
+  box-shadow:
+    inset 0 2px 3px rgba(0, 0, 0, 0.45),
+    0 2px 0 rgba(0, 0, 0, 0.35);
+}
+
+.rpg-slot-active {
+  background: linear-gradient(180deg, #4b3d24 0%, #2f2516 100%);
+  border: 2px solid #fbbf24;
+  box-shadow:
+    inset 0 0 8px rgba(251, 191, 36, 0.35),
+    0 0 10px rgba(251, 191, 36, 0.4);
+}

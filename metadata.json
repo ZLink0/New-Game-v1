@@ -1,0 +1,6 @@
+{
+  "name": "Runevale: Farm & Abyss",
+  "description": "2D Pixel HD farming life and turn-based roguelike dungeon RPG inspired by Rune Factory.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
